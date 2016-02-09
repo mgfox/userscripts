@@ -5,6 +5,8 @@
 // @description  remove ads from vk.com
 // @author       You
 // @match        https://vk.com/feed
+// @updateURL		https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
+// @downloadURL		https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
 // @grant        none
 // ==/UserScript==
 /* jshint -W097 */
