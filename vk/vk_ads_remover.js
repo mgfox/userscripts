@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         VK adv remover
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/mgfox/userscripts/
 // @version      0.1
 // @description  remove ads from vk.com
 // @author       You
