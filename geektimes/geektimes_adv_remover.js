@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Geektimes adv remover
 // @namespace    https://github.com/mgfox/userscripts/
-// @version      0.1
+// @version      0.2
 // @description  remove ads from geektimes.ru site
-// @author       You
-// @match        https://geektimes.ru/*
+// @author       Mike VV
+// @match        http*://geektimes.ru/*
 // @updateURL		https://raw.githubusercontent.com/mgfox/userscripts/master/geektimes/geektimes_adv_remover.js
 // @downloadURL		https://raw.githubusercontent.com/mgfox/userscripts/master/geektimes/geektimes_adv_remover.js
 // @grant        none

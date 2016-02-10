@@ -1,23 +1,18 @@
 // ==UserScript==
 // @name         VK adv remover
 // @namespace    https://github.com/mgfox/userscripts/
-// @version      0.1
+// @version      0.2
 // @description  remove ads from vk.com
-// @author       You
+// @author       Mike VV 
 // @match        https://vk.com/feed
-// @updateURL		https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
-// @downloadURL		https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
+// @require      https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
+// @updateURL	 https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
+// @downloadURL	 https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
 // @grant        none
 // ==/UserScript==
 /* jshint -W097 */
 'use strict';
 
-// Your code here...
-
-var jq=document.createElement('script')
-jq.setAttribute("type","text/javascript")
-jq.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js")
-document.getElementsByTagName("head")[0].appendChild(jq)
 
 setInterval(function() {
     $(".wall_text_name_explain_promoted_post")
