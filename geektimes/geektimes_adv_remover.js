@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Geektimes adv remover
 // @namespace    https://github.com/mgfox/userscripts/
-// @version      0.3
+// @version      0.4
 // @description  remove ads from geektimes.ru site
 // @author       Mike VV
 // @match        http*://geektimes.ru/*
@@ -19,4 +19,5 @@ setInterval(function() {
     //console.log("hide html_banner " + new Date());
     $(".html_banner").css("display", "none");
     $("#swiffycontainer").css("display", "none");
+    $(".firskill__label").parent().css("display", "none");
 }, 2000);
