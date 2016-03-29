@@ -4,7 +4,7 @@
 // @version      0.2
 // @description  remove ads from vk.com
 // @author       Mike VV 
-// @match        https://vk.com/feed
+// @match        https://vk.com/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
 // @updateURL	 https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
 // @downloadURL	 https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
@@ -21,4 +21,6 @@ setInterval(function() {
         .parent()
         .parent()
         .html("<br/><div  style='text-align: center; width:100%'><b>Advertisement wall posts disabled ;-)</b></div>");
+    $(".ads_ad_box").html("#1 adv disabled");
+    $(".trg-b-banner").html("#2 adv disabled");
 }, 2000);
