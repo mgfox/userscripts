@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         VK adv remover
 // @namespace    https://github.com/mgfox/userscripts/
-// @version      0.2
+// @version      0.3
 // @description  remove ads from vk.com
 // @author       Mike VV 
 // @match        https://vk.com/*
