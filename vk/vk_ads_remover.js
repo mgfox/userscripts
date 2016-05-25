@@ -3,8 +3,9 @@
 // @namespace    https://github.com/mgfox/userscripts/
 // @version      0.3
 // @description  remove ads from vk.com
-// @author       Mike VV 
+// @author       Mike VV
 // @match        https://vk.com/*
+// @match        https://new.vk.com/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
 // @updateURL	 https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
 // @downloadURL	 https://raw.githubusercontent.com/mgfox/userscripts/master/vk/vk_ads_remover.js
