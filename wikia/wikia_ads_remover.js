@@ -15,4 +15,5 @@
 
 setInterval(function() {
     $(".GoogleActiveViewClass").html("#1 adv disabled");
+    $("#google_image_div").html("#2 adv disabled");
 }, 2000);
