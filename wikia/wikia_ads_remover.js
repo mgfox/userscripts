@@ -4,7 +4,7 @@
 // @version      0.4
 // @description  remove ads from wikia.com
 // @author       Mike VV
-// @match        https://*.wikia.com/*
+// @match        http://*.wikia.com/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
 // @updateURL	 https://raw.githubusercontent.com/mgfox/userscripts/master/wikia/wikia_ads_remover.js
 // @downloadURL	 https://raw.githubusercontent.com/mgfox/userscripts/master/wikia/wikia_ads_remover.js
