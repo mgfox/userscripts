@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         VK adv remover
+// @name         WIKIA adv remover
 // @namespace    https://github.com/mgfox/userscripts/
 // @version      0.4
-// @description  remove ads from vk.com
+// @description  remove ads from wikia.com
 // @author       Mike VV
 // @match        https://*.wikia.com/*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js
