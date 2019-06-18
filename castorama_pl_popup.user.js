@@ -3,7 +3,7 @@
 // @namespace    http://mgfox.github.io
 // @version      0.1
 // @description  Block flashing newspaper popup on Castorama.pl
-// @author       You
+// @author       mgfox
 // @match        https://www.castorama.pl/*
 // @grant        none
 // ==/UserScript==
