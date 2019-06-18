@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Block Flashing Stuff
+// @name         Castorama.pl cleanup
 // @namespace    http://mgfox.github.io
 // @version      0.1
-// @description  try to take over the world!
+// @description  Block flashing newspaper popup on Castorama.pl
 // @author       You
 // @match        https://www.castorama.pl/*
 // @grant        none
