@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name       	Amazon Smile Redirect
+// @name       	Video Banner Remover
 // @namespace  	https://github.com/mgfox/userscripts/
 // @version    	0.1
 // @description This script removes video banner from fextralife wiki
