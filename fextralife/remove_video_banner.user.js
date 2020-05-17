@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       	Video Banner Remover
 // @namespace  	https://github.com/mgfox/userscripts/
-// @version    	0.1.4
+// @version    	0.1.5
 // @description This script removes video banner from fextralife wiki
 // @include     https://*.wiki.fextralife.com/*
 // @grant       none
@@ -13,20 +13,19 @@ if (location.href.search("wiki.fextralife.com") > -1) {
   
   var func = function(){
     var removed = 0
+    var ID_LIST = ["menu-add-a", "menu-add-b", "video-stream-container", "sidebar-wrapper", "sidebar-nav"]
+    var CLASS_LIST = ["ad-sidebar"]
     // remove by ID 
-    for (elemId in ["menu-add-a", "menu-add-b", "video-stream-container", "sidebar-wrapper", "sidebar-nav"]) {
-      console.log("Userscript: Checking for id=" + elemId + " ...")
+    for (elemId of ID_LIST) {
       var e = document.getElementById(elemId)
       if (e != null) {
         e.remove()
         removed = 1
-        console.log("Userscript: Element id=" + elemId + " removed")
-      } else {
-        console.log("Userscript: Element id=" + elemId + " not found")
       }
     }
-    for (className in ["ad-sidebar"]) {
-    var l = document.getElementsByClassName(className)
+    // remove by class
+    for (className of CLASS_LIST) {
+      var l = document.getElementsByClassName(className)
       for (i = 0; i < l.length; i++) {
         l[i].remove();
         removed = removed + 1
