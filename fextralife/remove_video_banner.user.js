@@ -13,20 +13,20 @@ if (location.href.search("wiki.fextralife.com") > -1) {
   
   setInterval(function(){
     var removed = 0
-    var d = document.getElementById("menu-add-b")
-    if (d != null) {
-      d.remove()
-      removed = 1
+    // remove by ID 
+    for (elemId in ["menu-add-a", "menu-add-b", "video-stream-container"]) {
+      var e = document.getElementById(elemId)
+      if (e != null) {
+        e.remove()
+        removed = 1
+      }
     }
-    var l = document.getElementsByClassName("ad-sidebar")
-    for (i = 0; i < l.length; i++) {
-      l[i].remove();
-      removed = removed + 1
-    }
-    var v = document.getElementById("video-stream-container")
-    if (d != null) {
-      d.remove()
-      removed = removed + 1
+    for (className in ["ad-sidebar"]) {
+    var l = document.getElementsByClassName(className)
+      for (i = 0; i < l.length; i++) {
+        l[i].remove();
+        removed = removed + 1
+      }
     }
     if (removed > 0)
       console.log("Userscript: Removed " + removed + " banner(s)")
