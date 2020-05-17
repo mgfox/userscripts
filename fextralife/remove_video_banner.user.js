@@ -10,7 +10,11 @@
 
 if (location.href.search("wiki.fextralife.com") > -1) {
   document.getElementById("menu-add-b").remove()
-  console.log("Userscript: video banner removed")
+  var l = document.getElementsByClassName("ad-sidebar")
+  for (i = 0; i < l.length; i++) {
+    l[i].remove();
+  }
+  console.log("Userscript: video banner removed") 
 } else {
   alert("Not a 'wiki.fextralife.com' site.")
 }
