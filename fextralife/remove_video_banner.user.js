@@ -11,7 +11,7 @@
 
 if (location.href.search("wiki.fextralife.com") > -1) {
   
-  setInterval(function(){
+  var func = function(){
     var removed = 0
     // remove by ID 
     for (elemId in ["menu-add-a", "menu-add-b", "video-stream-container"]) {
@@ -28,9 +28,17 @@ if (location.href.search("wiki.fextralife.com") > -1) {
         removed = removed + 1
       }
     }
-    if (removed > 0)
+    if (removed > 0) {
       console.log("Userscript: Removed " + removed + " banner(s)")
-  }, 500);
+    } else {
+      console.log("Userscript: No new banners detected")
+    }
+    
+  }
+  
+  console.log("Userscript: Init")
+  func()
+  setInterval(func, 500);
   
 } else {
   alert("Not a 'wiki.fextralife.com' site.")
