@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       	Video Banner Remover
 // @namespace  	https://github.com/mgfox/userscripts/
-// @version    	0.1.2
+// @version    	0.1.3
 // @description This script removes video banner from fextralife wiki
 // @include     https://*.wiki.fextralife.com/*
 // @grant       none
