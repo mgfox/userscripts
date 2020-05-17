@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name       	Video Banner Remover
 // @namespace  	https://github.com/mgfox/userscripts/
-// @version    	0.1.6
+// @version    	0.1.7
 // @description This script removes video banner from fextralife wiki
 // @include     https://*.wiki.fextralife.com/*
 // @grant       none
@@ -37,11 +37,10 @@ if (location.href.search("wiki.fextralife.com") > -1) {
     
   }
   
-  console.log("Userscript: Init")
   func()
   
   // recheck every 10 seconds
-  setInterval(func, 10000);
+  // setInterval(func, 10000);
   
 } else {
   alert("Not a 'wiki.fextralife.com' site.")
