@@ -8,13 +8,25 @@
 // @license     MIT
 // ==/UserScript==
 
+
 if (location.href.search("wiki.fextralife.com") > -1) {
-  document.getElementById("menu-add-b").remove()
-  var l = document.getElementsByClassName("ad-sidebar")
-  for (i = 0; i < l.length; i++) {
-    l[i].remove();
-  }
-  console.log("Userscript: video banner removed") 
+  
+  setInterval(function(){
+    var removed = 0
+    var d = document.getElementById("menu-add-b")
+    if (d != null) {
+      d.remove()
+      removed = 1
+    }
+    var l = document.getElementsByClassName("ad-sidebar")
+    for (i = 0; i < l.length; i++) {
+      l[i].remove();
+      removed = removed + 1
+    }
+    if (removed > 0)
+      console.log("Userscript: Removed " + removed + " video banner(s)")
+  }, 500);
+  
 } else {
   alert("Not a 'wiki.fextralife.com' site.")
 }
